@@ -17,26 +17,23 @@ struct ContentView: View {
         VStack(
             alignment: .center
         ) {
-            
-            
-            
             Image("logo")
                 .resizable()
                 .padding(.all)
                 .scaledToFit()
+            
             Form{
                 TextField(text: $username, prompt: Text("Username")) {
                     
                 }
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
+                
                 SecureField(text: $password, prompt: Text("Password")) {
                     
                 }
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
+                
                 HStack{
                     Spacer()
+                    
                     Button(action: {
                         print("sign up")
                     }, label: {
@@ -45,7 +42,9 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .padding(.all)
                     })
+                    
                     Spacer()
+                    
                     Button(action: {
                         print("log in")
                     }, label: {
@@ -54,16 +53,15 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .padding(.all)
                     })
+                    
                     Spacer()
                 }
                 .buttonStyle(.bordered)
             }
+            .textInputAutocapitalization(.never)
+            .disableAutocorrection(true)
             
         }
-        
-        
-        
-        
     }
 }
 
