@@ -14,6 +14,9 @@
 		C241C2F527FC7F5C00A61E01 /* DogBorrowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241C2F427FC7F5C00A61E01 /* DogBorrowerTests.swift */; };
 		C241C2FF27FC7F5C00A61E01 /* DogBorrowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241C2FE27FC7F5C00A61E01 /* DogBorrowerUITests.swift */; };
 		C241C30127FC7F5C00A61E01 /* DogBorrowerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241C30027FC7F5C00A61E01 /* DogBorrowerUITestsLaunchTests.swift */; };
+		C25141D228005D030090A946 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25141D128005D030090A946 /* User.swift */; };
+		C25141D6280062700090A946 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25141D5280062700090A946 /* SignUpView.swift */; };
+		C25141D8280069E10090A946 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25141D7280069E10090A946 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		C241C2FA27FC7F5C00A61E01 /* DogBorrowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogBorrowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C241C2FE27FC7F5C00A61E01 /* DogBorrowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBorrowerUITests.swift; sourceTree = "<group>"; };
 		C241C30027FC7F5C00A61E01 /* DogBorrowerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBorrowerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C25141D128005D030090A946 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C25141D5280062700090A946 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C25141D7280069E10090A946 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				C241C2E527FC7F5900A61E01 /* ContentView.swift */,
 				C241C2E727FC7F5B00A61E01 /* Assets.xcassets */,
 				C241C2E927FC7F5B00A61E01 /* Preview Content */,
+				C25141D128005D030090A946 /* User.swift */,
+				C25141D5280062700090A946 /* SignUpView.swift */,
+				C25141D7280069E10090A946 /* TestView.swift */,
 			);
 			path = DogBorrower;
 			sourceTree = "<group>";
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25141D6280062700090A946 /* SignUpView.swift in Sources */,
+				C25141D8280069E10090A946 /* TestView.swift in Sources */,
 				C241C2E627FC7F5900A61E01 /* ContentView.swift in Sources */,
 				C241C2E427FC7F5900A61E01 /* DogBorrowerApp.swift in Sources */,
+				C25141D228005D030090A946 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,57 +13,42 @@ struct ContentView: View {
     @State private var password: String = ""
     
     var body: some View {
-        
-        VStack(
-            alignment: .center
-        ) {
-            Image("logo")
-                .resizable()
-                .padding(.all)
-                .scaledToFit()
-            
-            Form{
-                TextField(text: $username, prompt: Text("Username")) {
-                    
-                }
+        NavigationView{
+            VStack(
+                alignment: .center
+            ) {
+                Image("logo")
+                    .resizable()
+                    .padding(.all)
+                    .scaledToFit()
                 
-                SecureField(text: $password, prompt: Text("Password")) {
+                Form{
+                    TextField(text: $username, prompt: Text("Username")) {
+                        
+                    }
+                    
+                    SecureField(text: $password, prompt: Text("Password")) {
+                        
+                    }
+                    
+                    NavigationLink(destination: SignUpView()){
+                        Text("Sign up")
+                            .font(.headline)
+                    }
+
+                    NavigationLink(destination: TestView()){
+                        Text("Log in")
+                            .font(.headline)
+                    }
                     
                 }
-                
-                HStack{
-                    Spacer()
-                    
-                    Button(action: {
-                        print("sign up")
-                    }, label: {
-                        Text("Sign Up")
-                            .font(.headline)
-                            .foregroundColor(.black)
-                            .padding(.all)
-                    })
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        print("log in")
-                    }, label: {
-                        Text("Log In")
-                            .font(.headline)
-                            .foregroundColor(.black)
-                            .padding(.all)
-                    })
-                    
-                    Spacer()
-                }
-                .buttonStyle(.bordered)
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
             }
-            .textInputAutocapitalization(.never)
-            .disableAutocorrection(true)
-            
-        }
+        }.navigationTitle("Ssfdafp")
     }
 }
+
 
 
 
