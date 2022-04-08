@@ -13,13 +13,15 @@ struct SignUpView: View {
     @State private var firstName: String = ""
     @State private var surName: String = ""
     @State private var email: String = ""
+    var ownerOrBorrower = ["Dog Owner", "Dog Borrower"]
+    @State private var selectedOwnerOrBorrower = "Dog Owner"
     
     var body: some View {
         NavigationView{
             VStack(
                 alignment: .center
             ) {
-
+                
                 Form{
                     Text("Sign up")
                         .font(.headline)
@@ -37,6 +39,12 @@ struct SignUpView: View {
                     
                     TextField(text: $email, prompt: Text("Email")) {
                         
+                    }
+                    
+                    Picker("Please choose one", selection: $selectedOwnerOrBorrower) {
+                        ForEach(ownerOrBorrower, id: \.self) {
+                            Text($0)
+                        }
                     }
                     
                     SecureField(text: $password, prompt: Text("Password")) {
