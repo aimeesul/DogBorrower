@@ -45,7 +45,7 @@ struct ContentView: View {
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
             }
-        }.navigationTitle("Ssfdafp")
+        }.navigationBarHidden(true)
     }
 }
 
